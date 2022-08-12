@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Menu Principal {% endblock %}
+
+
+{% block content %}
+
+    <body class="otrofondo">
+    <div class="container">
+        <div class="col-lg-4 col-lg-offset-4" style="margin-top: 5px">
+
+            <h1>
+                Sistema de Gestion de Proyectos
+            </h1>
+            <form action="{{ url_for('inicio_menu') }}" method="POST">
+                <div class="form-group">
+                    <button type = "submit" name = "boton_mod_seg" value = "boton_mod_seg" class = "btn btn-success btn-block"> Modulo de Seguridad </button>
+                    <button type = "submit" name = "boton_mod_pro" value = "boton_mod_pro" class = "btn btn-success btn-block"> Modulo de Proyecto </button>
+                    <button type = "submit" name = "boton_mod_des" value = "boton_mod_des" class = "btn btn-success btn-block"> Modulo de Desarrollo </button>
+                </div>
+            </form>
+
+        </div>
+    </body>
+{% endblock %}
